@@ -4,9 +4,6 @@ app = Flask(__name__)
 import os
 @app.route("/")
 def hello():
-    page = request.args.get('page', default = 1, type = int)
-    filter = request.args.get('filter', default = '*', type = str)
-    print 'psw='+str(page)
     return "Hello leo!"
 @app.route('/query-example')
 def query_example():
